@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+   padding-right: 165px;
+   padding-left: 165px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.button-hover:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2));
+    cursor: pointer;    
+}
+
+.button-hover:active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3));
+}
+
+.header {
+    display: flex;
+    background-color: rgba(1, 45, 99, 1);
+    height: 93px;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: 300;
+    width: 100%;
+    position: fixed;
+}
+
+.header-links {
+    display: flex;
+    user-select: none;
+}
+
+.header-link-list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    margin-right: 73px;
+    margin-left: 152px;
+    align-items: center;
+}
+
+.header-link {
+   display: flex;
+   color: rgba(199, 199, 199, 1);
+   font-size: 21px;
+   cursor: pointer;
+}
+
+.header-link:hover{
+   text-decoration: underline;
+}
+
+.current-page, .current-lang {
+    font-weight: 600;
+}
+
+.lang-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.hero {
+    background-image: url("./imgs/bg-hero.png");
+    background-repeat: no-repeat;
+    padding-bottom: 183px;
+    padding-top: 95px;
+    background-size: 100%;
+}
+
+.hero-title, .hero-subtitle, .hero-subtitle2 {
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.hero-logo-name {
+    font-family: "PT Serif";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);;
+}
+
+.hero-logoandname {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.hero-title {
+    font-size: 110px;
+    font-family: "Playfair Display";
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.hero-subtitle {
+    font-size: 55px;
+    font-family: "Playfair Display";
+    margin-top: 8px;
+
+}
+
+.hero-subtitle2 {
+    font-size: 18px;
+    max-width: 400px;
+    font-family: "Roboto";
+    margin-top: 15px;
+    margin-bottom: 41px;
+}
+
+.hero-button {
+    padding: 20px 61px 20px 61px;
+    background-color: rgba(142, 50, 198, 1);
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0%;
+    border-radius: 10px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.hero-logo {
+   width: 190px;
+   height: 150px;
+}
+
+
+
+.desc-card1::after{
+   content: "";
+   display: block;
+   background-image: url("./imgs/Quality.png");
+   background-size: cover;
+   height: 240px;
+   width: 240px;
+}
+
+.desc-card2::before{
+   content: "";
+   display: block;
+   background-image: url("./imgs/Paints.png");
+   background-size: cover;
+   height: 240px;
+   width: 240px;
+}
+
+.desc-card3::after{
+   content: "";
+   display: block;
+   background-image: url("./imgs/Delivery.png");
+   background-size: cover;
+   height: 240px;
+   width: 240px;
+}
+
+.nike-description-content {
+    display: flex;
+    justify-content: center;
+    padding: 25px 25px 25px 25px;
+}
+
+.nike-description {
+    background-image: url("./imgs/bg-desc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 105px;
+    padding-bottom: 105px;
+    border-top: solid 2px rgba(255, 255, 255, 1) ;
+}
+
+.nike-description-content {
+    border: solid 5px rgba(142, 50, 198, 1);
+}
+
+.nike-description-content-subtitle {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.desc-card1, .desc-card2 {
+   border-right: 1px rgba(255, 255, 255, 1) solid;
+}
+
+.desc-card2 {
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+.desc-card1 {
+   padding-right: 70px;
+}
+
+.desc-card3 {
+    padding-left: 70px;
+}
+
+
+
+.reviews {
+    display: flex;
+    background-image: url("./imgs/reviews-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 520px;
+    flex-direction: column;
+    border-top: solid 2px rgba(255, 255, 255, 1);
+}
+
+.title-review {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 292px;
+    border-radius: 15px;
+    padding-left: 13px;
+    padding-right: 13px;
+    justify-content: space-between;
+}
+
+.rewiev-card1 {
+    background: linear-gradient(to bottom right,  #00E5E6 7%, #00A8F7 26%, #9A76F9 63%, #CC5EC2 100%);
+    box-shadow: 0px 14px 0px -5px rgba(123, 84, 178, 1),
+    0px 30px 0px -13px rgba(83, 57, 120, 1);
+}
+
+.rewiev-card2 {
+    background: linear-gradient(to bottom right,  #FF68B4, #FF45E1, #CE3AFF, #8961FF);
+    box-shadow: 0px 14px 0px -5px rgba(145, 89, 177, 1),
+    0px 30px 0px -13px rgba(97, 51, 124, 1);
+}
+
+.rewiev-card3 {
+    background: linear-gradient(to bottom right,  #FFE128, #FF9B5C, #FF8381 , #FF5489);
+    box-shadow: 0px 14px 0px -5px rgba(185, 90, 76, 1),
+    0px 30px 0px -13px rgba(115, 47, 38, 1);
+}
+
+.review {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 49px;
+}
+
+.rewiev-content-date {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(216, 216, 216, 1);
+    padding-top: 8px;
+}
+
+.review-img {
+    width: 31px;
+    height: 31px;
+}
+
+.rewiev-peoples-database {
+    display: flex;
+    gap: 5px;
+    padding-bottom: 30px;
+}
+
+.rewiev-people-name-joined {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+.rewiev-content-name {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.review-content-joined {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(216, 216, 216, 1);
+}
+
+.review-content {
+    display: flex;
+    justify-content: center;
+    gap: 93px;
+}
+
+.peoples-review {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.order {
+    display: flex;
+    background-image: url("./imgs/BG-order.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 2px rgba(255, 255, 255, 1);
+}
+
+.title-order {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.order-content {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    align-items: center;
+    margin-top: 33px;
+}
+
+.order-information-button {
+    border-radius: 50px;
+    font-size: 25px;
+    padding-left: 25px;
+    transition: 0.2s;
+}
+
+.textarea-top {
+    width: 690px;
+    height: 60px;
+}
+
+.textarea-bottom {
+    width: 580px;
+    height: 50px;
+}
+
+.order-submit-button {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(142, 50, 198, 1);
+    padding: 20px 48px 20px 48px;
+    border-radius: 16px;
+    margin-top: 19px;
+    margin-bottom: 37px;
+}
+
+
+
+.footer {
+    background-color: rgba(2, 22, 53, 1);
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px;
+}
+
+
+.footer-list-item { 
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.emails-list {
+    text-align: end;
+}
+
+.emails {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    border-bottom: 1px solid rgba(155, 155, 155, 1);
+}
+
+.copyright {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-country {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-important-information {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+
+.footer-important-text {
+   display: flex;
+   flex-direction: column;
+   gap: 7px;
+}
+
+
+
+.comingsoon {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.comingsoon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.comingsoon-backtomain {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
+    margin-top: 60px;
+}
